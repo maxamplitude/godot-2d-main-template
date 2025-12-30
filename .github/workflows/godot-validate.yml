@@ -1,0 +1,21 @@
+name: Godot Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot (example: from tools/ checked into repo)
+        run: |
+          chmod +x tools/godot4
+          ./tools/godot4 --version
+
+      - name: Validate Levels
+        run: |
+          ./tools/godot4 --headless --quit --script res://tools/validate_levels_headless.gd
+

@@ -1,0 +1,10 @@
+{
+  "template": "EnemyTemplate.tscn",
+  "name": "EnemyGrunt",
+  "category": "enemy",
+  "tags": ["melee", "basic"],
+  "overrides": {
+    "hp": 25,
+    "speed": 120
+  }
+}

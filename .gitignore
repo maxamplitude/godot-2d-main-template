@@ -4,6 +4,7 @@
 
 # Godot-specific ignores
 .import/
+export/
 export.cfg
 export_credentials.cfg
 
@@ -14,3 +15,12 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# General ignores
+*.log
+*.tmp
+
+# Cursor specific ignores
+.cursor/
+.cursorindexingignore
+.specstory/
